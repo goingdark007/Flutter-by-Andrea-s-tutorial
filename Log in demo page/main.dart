@@ -1,35 +1,40 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // gets material library of flutter.
 
-import 'log_in_page_dart.dart';
+import 'log_in_page_dart.dart'; // gets the log_in_page_dart file codes.
 
 void main () {
 
-  runApp( MyApp());
+  runApp( MyApp()); // runApp() starts the app from this widget called MyApp.
 
 }
 
-class MyApp extends StatelessWidget{
-  const MyApp({super.key});
+class MyApp extends StatelessWidget{ // defines root widget MyApp which is stateless.
 
-  @override
-  Widget build (BuildContext context){
+  const MyApp({super.key}); // public classes need constructor key for optimization or identify widgets.
 
-    return MaterialApp(
+  @override // overrides the build method which means the method is not forced.
+  Widget build (BuildContext context){ // every widget must define a build method that returns what the UI.
+    // should look like and context gives the info where the widget is in the widget tree.
 
-      title: 'Flutter log in demo',
-      theme: ThemeData(
+    return MaterialApp( // starts with Material design it is a root widget that sets app-wide.
+      // features like themes, title & navigation.
 
-        primarySwatch: Colors.blue,
+      title: 'Flutter log in demo', // sets the title or name of the app visible in app switcher.
 
-        appBarTheme: AppBarTheme (
+        theme: ThemeData( // it is a widget that defines app looks and can have widgets inside like appBarTheme.
 
-          backgroundColor: Colors.blue
+        primarySwatch: Colors.blue, // sets the base color for components like buttons, progress bars, etc.
+
+        appBarTheme: AppBarTheme ( // sets the look of the app bar.
+
+          backgroundColor: Colors.blue // sets default style for all AppBars in the app.
 
         ),
 
       ),
 
-      home: LoginPage()
+      home: LoginPage() // This tells Flutter to show the LoginPage widget (which I imported earlier)
+      // when the app starts.
 
     );
 
