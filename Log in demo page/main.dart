@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget{ // defines root widget MyApp which is state
   const MyApp({super.key}); // public classes need constructor key for optimization or identify widgets.
 
   @override // overrides the build method which means the method is not forced.
-  Widget build (BuildContext context){ // every widget must define a build method that returns what the UI.
+  Widget build (BuildContext context){ // every widget must define a build method that returns what the UI
     // should look like and context gives the info where the widget is in the widget tree.
 
-    return MaterialApp( // starts with Material design it is a root widget that sets app-wide.
+    return MaterialApp( // starts with Material design it is a root widget that sets app-wide
       // features like themes, title & navigation.
 
       title: 'Flutter log in demo', // sets the title or name of the app visible in app switcher.
