@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget{ // defines root widget MyApp which is state
 
         appBarTheme: AppBarTheme ( // sets the look of the app bar.
 
-          backgroundColor: Colors.blue // sets default style for all AppBars in the app.
+          backgroundColor: Colors.blue // sets default style of color for backgrounds in the app.
 
         ),
 
@@ -46,3 +46,4 @@ class MyApp extends StatelessWidget{ // defines root widget MyApp which is state
   }
 
 }
+
